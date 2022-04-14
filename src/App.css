@@ -103,6 +103,7 @@ button:disabled {
 .sign-in {
   color: #282c34;
   background: white;
+  border-radius: 30px;
   max-width: 400px;
   margin: 0 auto;
 }

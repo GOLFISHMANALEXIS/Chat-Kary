@@ -54,7 +54,7 @@ function SignIn() {
       <button className="sign-in" onClick={signInWithGoogle}>Inicia con Google</button>
       <center>
       <p>MI portafolio <a href="https://golfishmanalexis.github.io/PORTAFOLIO-ALEXIS_V/">Aqui</a></p>
-      <p>ESTA ES UNA APP EXCLUSIVAMENTE PARA KARYMITA</p>
+      <p>ESTA ES UNA APP EXCLUSIVAMENTE PARA <p><a href="https://instagram.com/karymemt_?igshid=YmMyMTA2M2Y=">KARYMITA</a></p></p>
       </center>
     </>
   )
