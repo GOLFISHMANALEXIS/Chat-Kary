@@ -10,7 +10,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+  apiKey: "AIzaSyCJ5gAka2ojA4SyKG2r4MA_rxLttG8eBZ8",
+  authDomain: "chat-karymita.firebaseapp.com",
+  projectId: "chat-karymita",
+  storageBucket: "chat-karymita.appspot.com",
+  messagingSenderId: "763722999561",
+  appId: "1:763722999561:web:8adb48ae9bebc3b42a55d8"
 })
 
 const auth = firebase.auth();
@@ -25,7 +30,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>CHAT_KARYMITA_Vp</h1>
         <SignOut />
       </header>
 
@@ -46,8 +51,11 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <button className="sign-in" onClick={signInWithGoogle}>Inicia con Google</button>
+      <center>
+      <p>MI portafolio <a href="https://golfishmanalexis.github.io/PORTAFOLIO-ALEXIS_V/">Aqui</a></p>
+      <p>ESTA ES UNA APP EXCLUSIVAMENTE PARA KARYMITA</p>
+      </center>
     </>
   )
 
@@ -55,7 +63,7 @@ function SignIn() {
 
 function SignOut() {
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+    <button className="sign-out" onClick={() => auth.signOut()}>Salir</button>
   )
 }
 
@@ -97,9 +105,9 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Escribe Algo..." />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}>🡱</button>
 
     </form>
   </>)
